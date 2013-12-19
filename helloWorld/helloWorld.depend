@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1387346320 source:d:\projects\gitrepos\alexalspach\cpp_tutorials\helloworld\main.cpp
-	<iostream>
-	<stdio.h>
-	<conio.h>
-	<string>
-

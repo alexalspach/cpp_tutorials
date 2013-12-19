@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1387424504 source:d:\projects\gitrepos\alexalspach\cpp_tutorials\stringstream\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+

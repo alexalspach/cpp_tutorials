@@ -71,6 +71,65 @@ int main()
     // Comma operator ( , )
     a = (b=3, b+2); // 5, b=3 then b+2=5
     cout << a << endl;
+    cout << endl;
+
+
 
     // Bitwise operators ( &, |, ^, ~, <<, >> )
+    /*[Operator]    [asm equivalent]  [Description]
+       &	         AND	           Bitwise AND
+       |	         OR	               Bitwise inclusive OR
+       ^	         XOR	           Bitwise exclusive OR
+       ~	         NOT	           Unary complement (bit inversion)
+       <<	         SHL	           Shift bits left
+       >>	         SHR	           Shift bits right*/
+
+
+
+    // Explicit type casting operator
+    int j;
+    float f = 3.84;
+    j = (int) f;
+    // i = int (f); //same
+    cout << f << " -> " << j << endl << endl;
+
+    // sizeof
+    j = sizeof (double); // bytes
+    cout << j << endl << endl;
+
+    float g;
+    g = 5 + 7 % 2; // same as  5 + (7 % 2);
+    cout << g << endl << endl;
+
+    // Operator Priority
+    // From greatest to smallest priority, C++ operators are evaluated in the following order:
+    /*  Level   Precedence group    Operator	        Description	Grouping
+        1	    Scope	            ::	                scope qualifier	Left-to-right
+        2	    Postfix (unary)	    ++ --	            postfix increment / decrement	Left-to-right
+                                    ()	                functional forms
+                                    []	                subscript
+                                    . ->	            member access
+        3	Prefix (unary)	        ++ --	            prefix increment / decrement	Right-to-left
+                                    ~ !	                bitwise NOT / logical NOT
+                                    + -	                unary prefix
+                                    & *	                reference / dereference
+                                    new delete	        allocation / deallocation
+                                    sizeof	            parameter pack
+                                    (type)	            C-style type-casting
+        4	Pointer-to-member       .* ->*	            access pointer	Left-to-right
+        5	Arithmetic: scaling	    * / %	            multiply, divide, modulo	Left-to-right
+        6	Arithmetic: addition    + -	                addition, subtraction	Left-to-right
+        7	Bitwise shift	        << >>	            shift left, shift right	Left-to-right
+        8	Relational	            < > <= >=	        comparison operators	Left-to-right
+        9	Equality	            == !=	            equality / inequality	Left-to-right
+        10	And	                    &	                bitwise AND	Left-to-right
+        11	Exclusive or	        ^	                bitwise XOR	Left-to-right
+        12	Inclusive or	        |	                bitwise OR	Left-to-right
+        13	Conjunction	            &&	                logical AND	Left-to-right
+        14	Disjunction	            ||	                logical OR	Left-to-right
+        15	Assignment-level 	    = *= /= %= += -=
+            expressions             >>= <<= &= ^= |=	assignment / compound assignment	Right-to-left
+                                    ?:	                conditional operator
+        16	Sequencing	            ,	                comma separator	Left-to-right */
+
 }

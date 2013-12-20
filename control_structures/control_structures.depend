@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1387529601 source:d:\projects\gitrepos\alexalspach\cpp_tutorials\control_structures\main.cpp
+	<iostream>
+	<string>
+	<stdlib.h>
+	<time.h>
+
